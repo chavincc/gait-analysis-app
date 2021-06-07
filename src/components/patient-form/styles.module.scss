@@ -1,0 +1,78 @@
+.patientForm {
+  padding: 50px 25% 0 25%;
+
+  .title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #222222;
+    margin-bottom: 50px;
+  }
+
+  .formControl {
+    margin-bottom: 25px !important;
+  }
+
+  .customLabel {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 5px;
+  }
+
+  .textArea {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+  }
+
+  .buttonRow {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button {
+      padding: 12px 30px;
+      min-width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #6eb5f8;
+      border-radius: 24px;
+      border: none;
+      text-decoration: none;
+      transition: 0.1s;
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        background: #449cee;
+      }
+
+      .buttonText {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: white;
+      }
+
+      &Secondary {
+        @extend .button;
+
+        border: 1px solid #6eb5f8;
+        background: none;
+
+        &:hover {
+          background: #f0f8ff;
+        }
+
+        .buttonText {
+          color: #6eb5f8;
+        }
+      }
+    }
+  }
+}

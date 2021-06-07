@@ -1,0 +1,60 @@
+.tableContainer {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  .tableRow {
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    padding: 22px 40px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #e2e2e2;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+
+  .tableHeader {
+    $base-color: #e0f0fe;
+    @extend .tableRow;
+
+    background: $base-color;
+    font-weight: bold;
+    border: none;
+
+    .sortButton {
+      border: none;
+      background: $base-color;
+      cursor: pointer;
+      outline: none;
+    }
+
+    &:hover {
+      background-color: $base-color;
+    }
+  }
+
+  .col1 {
+    width: 17.5%;
+  }
+  .col2 {
+    width: 82.5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .patientLink {
+    font-size: 16px;
+    line-height: 19px;
+    color: #6eb5f8;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
